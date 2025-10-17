@@ -1,0 +1,110 @@
+/* ----------GENERAL AND HOMEPAGE--------------- */
+
+body {
+  background-image: url(../assets/images/background.jpg);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.form-control {
+  width: 50%;
+}
+
+.blurry {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-size: 64px;
+  font-style: normal;
+}
+
+/* -------RESULTS AND FAVORITE CARDS------------ */
+
+#results .card {
+  width: 18rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.custom-shadow {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.custom-shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.favorite-btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #e63946;
+  padding: 0;
+}
+
+.favorite-btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.remove-btn {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2rem;
+}
+
+.remove-btn:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* --------TIMER----------- */
+
+.timer {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  max-width: 400px;
+  border-radius: 25px;
+}
+
+@keyframes flashRed {
+  0% {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+  50% {
+    background-color: rgba(255, 0, 0, 0.6);
+  }
+  100% {
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+}
+
+.flash-alert {
+  animation: flashRed 0.5s ease-in-out;
+  animation-iteration-count: 6;
+}
