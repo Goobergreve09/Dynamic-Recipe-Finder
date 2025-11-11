@@ -22,7 +22,7 @@ My motivation for this project was for completing the final assignment in Web Ap
 
 ## Demo
 
-To watch a short video demonstration via youtube, click here.
+To watch a short video demonstration via youtube, [click here](https://www.youtube.com/watch?v=cXjf3VBjLuI).
 
 ## Usage
 
